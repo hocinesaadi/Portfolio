@@ -10,7 +10,6 @@ import { greeting, contactPageData } from "../../portfolio.js";
 
 const ContactData = contactPageData.contactSection;
 
-
 class Contact extends Component {
   render() {
     const theme = this.props.theme;
@@ -21,7 +20,8 @@ class Contact extends Component {
           <Fade bottom duration={1000} distance="40px">
             <div className="contact-heading-div">
               <div className="contact-heading-img-div">
-                <img className="img-circle"
+                <img
+                  className="img-circle"
                   src={require(`../../assests/images/${ContactData["profile_image_path"]}`)}
                   alt=""
                 />
@@ -44,14 +44,13 @@ class Contact extends Component {
                   <Button
                     text="See My Resume"
                     newTab={true}
-                    href='https://www.canva.com/design/DAE56nKMp3o/3fDeZN42G-nDjsWgzgyvKg/view?utm_content=DAE56nKMp3o&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview'
+                    href="https://www.canva.com/design/DAE56nKMp3o/3fDeZN42G-nDjsWgzgyvKg/view?utm_content=DAE56nKMp3o&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
                     theme={theme}
                   />
                 </div>
               </div>
             </div>
           </Fade>
-         
         </div>
         <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
         <TopButton theme={this.props.theme} />
